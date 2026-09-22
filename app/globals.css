@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #6d3ef5;
+  --bg: #ffffff;
+  --ink: #1d1b2e;
+  --muted: #6b6b7b;
+  --card: #f8f7fc;
+  --border: #ececf3;
+}
+
+.dark {
+  --bg: #121022;
+  --ink: #f1eef9;
+  --muted: #a9a3c2;
+  --card: #1b1830;
+  --border: #2a2645;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Reserve space for ad slots up-front so nothing shifts (CLS-safe) */
+.ad-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  overflow: hidden;
+}
