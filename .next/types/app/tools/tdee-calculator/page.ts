@@ -1,8 +1,8 @@
-// File: C:\Users\atalr\OneDrive\Desktop\new fitbyatal.in\fitbyatal-next\app\blogs\blog\page.tsx
-import * as entry from '../../../../../app/blogs/blog/page.js'
+// File: C:\Users\atalr\OneDrive\Desktop\new fitbyatal.in\fitbyatal-next\app\tools\tdee-calculator\page.tsx
+import * as entry from '../../../../../app/tools/tdee-calculator/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../app/blogs/blog/page.js')
+type TEntry = typeof import('../../../../../app/tools/tdee-calculator/page.js')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }
