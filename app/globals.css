@@ -52,3 +52,16 @@ body {
   font-size: 12px;
   overflow: hidden;
 }
+/* Puri website ki scrollbar hide karne ke liye */
+html, body {
+  /* Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Firefox */
+  scrollbar-width: none;
+  
+  /* IE and Edge */
+  -ms-overflow-style: none;
+}

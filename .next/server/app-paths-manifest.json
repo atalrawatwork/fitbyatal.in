@@ -1,6 +1,7 @@
 {
   "/page": "app/page.js",
   "/tools/tools/page": "app/tools/tools/page.js",
-  "/tools/calorie-calculator/page": "app/tools/calorie-calculator/page.js",
-  "/blogs/blog/page": "app/blogs/blog/page.js"
+  "/tools/bmi-calculator/page": "app/tools/bmi-calculator/page.js",
+  "/blogs/blog/page": "app/blogs/blog/page.js",
+  "/about/page": "app/about/page.js"
 }

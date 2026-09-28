@@ -544,8 +544,8 @@ video {
 .left-0 {
   left: 0px;
 }
-.top-2 {
-  top: 0.5rem;
+.top-3 {
+  top: 0.75rem;
 }
 .top-full {
   top: 100%;
@@ -580,6 +580,9 @@ video {
 }
 .mb-4 {
   margin-bottom: 1rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 .mb-6 {
   margin-bottom: 1.5rem;
@@ -867,6 +870,10 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1107,6 +1114,19 @@ body {
   color: var(--muted);
   font-size: 12px;
   overflow: hidden;
+}
+/* Puri website ki scrollbar hide karne ke liye */
+html, body {
+  /* Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Firefox */
+  scrollbar-width: none;
+  
+  /* IE and Edge */
+  -ms-overflow-style: none;
 }
 .hover\:border-brand:hover {
   --tw-border-opacity: 1;
