@@ -54,7 +54,11 @@ const nextConfig = {
         source: '/(.*)',
         headers: [
           { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          // सुरक्षा के लिए 'X-Frame-Options: SAMEORIGIN' को हटा दिया गया है
+          { 
+            key: 'Content-Security-Policy', 
+            value: "frame-ancestors 'self' https://atalrawat.in" 
+          },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
         ],
