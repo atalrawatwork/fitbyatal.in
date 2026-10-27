@@ -82,6 +82,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <RegisterSW />
+         <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`window.clarity=window.clarity||function(){(clarity.q=clarity.q||[]).push(arguments)};
+          const t=document.createElement("script");t.async=1;t.src="https://clarity.ms";
+          document.head.appendChild(t);`}
+        </Script>
       </body>
     </html>
   );
